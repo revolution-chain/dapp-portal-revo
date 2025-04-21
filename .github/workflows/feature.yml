@@ -41,11 +41,11 @@ jobs:
         run: |
           npm run generate
 
-      - name: Deploy
-        uses: matter-labs/action-hosting-deploy@main
-        id: deploy
-        with:
-          repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_STAGING_ZKSYNC_DAPP_WALLET_V2 }}"
-          projectId: staging-zksync-dapp-wallet-v2
-          expires: 7d
+      # - name: Deploy
+      #   uses: matter-labs/action-hosting-deploy@main
+      #   id: deploy
+      #   with:
+      #     repoToken: "${{ secrets.GITHUB_TOKEN }}"
+      #     firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_STAGING_ZKSYNC_DAPP_WALLET_V2 }}"
+      #     projectId: staging-zksync-dapp-wallet-v2
+      #     expires: 7d
