@@ -65,7 +65,7 @@ jobs:
           #   matterlabs/dapp-portal:latest
           #   matterlabs/dapp-portal:${{ needs.publish.outputs.releaseVersion }}
           tags: |
-            ndau/dapp-portal-revo:latest
+            ndau/portal-revo:latest
           file: Dockerfile
           no-cache: true
 
