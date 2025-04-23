@@ -99,6 +99,13 @@ export default defineNuxtConfig({
         "GIT_COMMIT_HASH",
         "GIT_REPO_URL",
         "ONRAMP_STAGING",
+        "NETWORK_ID",
+        "NETWORK_KEY",
+        "NETWORK_NAME",
+        "NETWORK_RPC_URL",
+        "NETWORK_BLOCK_EXPLORER_URL",
+        "NETWORK_BLOCK_EXPLORER_API",
+        "L1_NETWORK",
       ].map((key) => [`process.env.${key}`, JSON.stringify(process.env[key])])
     ),
     css: {
@@ -116,6 +123,13 @@ export default defineNuxtConfig({
     public: {
       sentryDSN: process.env.SENTRY_DSN,
       sentryENV: process.env.SENTRY_ENV,
+      networkId: process.env.NETWORK_ID,
+      networkKey: process.env.NETWORK_KEY,
+      networkName: process.env.NETWORK_NAME,
+      networkRpcUrl: process.env.NETWORK_RPC_URL,
+      networkBlockExplorerUrl: process.env.NETWORK_BLOCK_EXPLORER_URL,
+      networkBlockExplorerApi: process.env.NETWORK_BLOCK_EXPLORER_API,
+      l1Network: process.env.L1_NETWORK,
     },
   },
   compatibilityDate: "2025-03-24",

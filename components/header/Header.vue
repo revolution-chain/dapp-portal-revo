@@ -5,7 +5,8 @@
 
     <div class="logo-container">
       <NuxtLink :to="{ name: 'bridge' }">
-        <IconsZkSync class="logo-icon" />
+        <!-- <IconsZkSync class="logo-icon" /> -->
+        <IconsRevo class="logo-icon" />
       </NuxtLink>
       <span class="beta-label">Beta</span>
     </div>

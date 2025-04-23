@@ -7,7 +7,7 @@ import type { Token } from "@/types";
 import type { Chain } from "@wagmi/core/chains";
 
 const portalRuntimeConfig = usePortalRuntimeConfig();
-
+const networkRuntimeConfig = useNetworkRuntimeConfig();
 // We don't use RPC tokens here, since the expectation is that public quota is enough to cover all the requests.
 // We provide several RPC URLs to deal with the case when one of them is down.
 // The expectation is that "more reliable" RPCs are listed first.
@@ -84,6 +84,19 @@ export const dockerizedNode: ZkSyncNetwork = {
 };
 
 const publicChains: ZkSyncNetwork[] = [
+  {
+    id: networkRuntimeConfig.id,
+    key: networkRuntimeConfig.key,
+    name: networkRuntimeConfig.name,
+    rpcUrl: networkRuntimeConfig.rpcUrl,
+    blockExplorerUrl: networkRuntimeConfig.blockExplorerUrl,
+    blockExplorerApi: networkRuntimeConfig.blockExplorerApi,
+    displaySettings: {
+      onramp: false, // temporary hidden
+      showPartnerLinks: true,
+    },
+    l1Network: l1Networks[networkRuntimeConfig.l1Network as keyof typeof l1Networks],
+  },
   {
     id: 324,
     key: "mainnet",
