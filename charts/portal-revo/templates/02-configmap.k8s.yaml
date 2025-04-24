@@ -19,9 +19,11 @@ data:
       {
         "network": {
           "id": 73861,
+          "name": "Revolution",
           "key": "revolution",
-          "name": "revolution",
-          "rpcUrl": "http://revolution1.mcnierney.com:3252/",
+          "rpcUrl": "http://revolution1.mcnierney.com:3252",
+          "blockExplorerUrl": "dev.revoscan.io",
+          "blockExplorerApi": "",
           "l1Network": {
             "id": 11155111,
             "name": "Sepolia",

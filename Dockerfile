@@ -7,7 +7,7 @@ FROM base-stage AS build-stage
 RUN apk add --update python3 make g++ && rm -rf /var/cache/apk/*
 RUN npm cache clean --force && npm install
 COPY . .
-RUN npm run generate
+RUN npm run generate:node:hyperchain
 
 FROM base-stage AS production-stage
 COPY --from=build-stage /usr/src/app/.output/public ./dist
