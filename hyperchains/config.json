@@ -2,8 +2,8 @@
   {
     "network": {
       "id": 73861,
-      "key": "revod",
-      "name": "revod",
+      "key": "revolution",
+      "name": "revolution",
       "rpcUrl": "http://revolution1.mcnierney.com:3252/",
       "l1Network": {
         "id": 11155111,
