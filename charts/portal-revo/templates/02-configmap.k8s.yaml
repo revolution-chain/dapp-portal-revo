@@ -1,0 +1,58 @@
+## 310-geth-configmap.yml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: portal-revo-config
+  labels:
+    app: portal-revo
+data:
+  LOG_LEVEL: verbose
+  PORT: "3000"
+  ## This currently doesn't work. The config file comes from image building stage
+  env.conf: |-
+    WALLET_CONNECT_PROJECT_ID=64c300c731392456340fe626355b366e
+    ANKR_TOKEN=
+    SENTRY_DSN=
+    SENTRY_ENV=development
+  hyperchains.conf: |-
+    [
+      {
+        "network": {
+          "id": 73861,
+          "key": "revolution",
+          "name": "revolution",
+          "rpcUrl": "http://revolution1.mcnierney.com:3252/",
+          "l1Network": {
+            "id": 11155111,
+            "name": "Sepolia",
+            "network": "sepolia",
+            "nativeCurrency": {
+              "name": "Ether",
+              "symbol": "ETH",
+              "decimals": 18
+            },
+            "rpcUrls": {
+              "default": {
+                "http": [
+                  "https://eth-sepolia.g.alchemy.com/v2/t3L6Ib7KIIT7FfNbeU6rkhKxHlNtjIWf"
+                ]
+              },
+              "public": {
+                "http": [
+                  "https://eth-sepolia.g.alchemy.com/v2/t3L6Ib7KIIT7FfNbeU6rkhKxHlNtjIWf"
+                ]
+              }
+            }
+          }
+        },
+        "tokens": [
+          {
+            "address": "0x000000000000000000000000000000000000800A",
+            "symbol": "REVO",
+            "decimals": 18,
+            "l1Address": "0x2c81f8b274d6096bbd99a6e133e2dec3731af114",
+            "name": "REVO"
+          }
+        ]
+      }
+    ]
