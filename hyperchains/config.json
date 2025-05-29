@@ -4,9 +4,9 @@
       "id": 73861,
       "name": "Revolution",
       "key": "revolution",
-      "rpcUrl": "http://server-v2.dev.svc.cluster.local:3050",
+      "rpcUrl": "https://server-v2.dev.svc.cluster.local:3050",
       "blockExplorerUrl": "https://dev.revoscan.io",
-      "blockExplorerApi": "http://block-explorer.dev.svc.cluster.local:3020",
+      "blockExplorerApi": "https://block-explorer.dev.svc.cluster.local:3020",
       "l1Network": {
         "id": 11155111,
         "name": "Sepolia",
