@@ -21,9 +21,9 @@ data:
           "id": 73861,
           "name": "Revolution",
           "key": "revolution",
-          "rpcUrl": "https://dev.revolutionchain.io",
+          "rpcUrl": "http://server-v2.dev.svc.cluster.local:3050",
           "blockExplorerUrl": "https://dev.revoscan.io",
-          "blockExplorerApi": "https://api.dev.revoscan.io",
+          "blockExplorerApi": "http://block-explorer.dev.svc.cluster.local:3020",
           "l1Network": {
             "id": 11155111,
             "name": "Sepolia",
@@ -36,12 +36,12 @@ data:
             "rpcUrls": {
               "default": {
                 "http": [
-                  "https://eth-sepolia.g.alchemy.com/v2/t3L6Ib7KIIT7FfNbeU6rkhKxHlNtjIWf"
+                  "https://rpc.ankr.com/eth_sepolia/2a84f7e66e091ad88c4e03c5581e9d9ca2976fe69e0a15ee46a39f2e9f928468"
                 ]
               },
               "public": {
                 "http": [
-                  "https://eth-sepolia.g.alchemy.com/v2/t3L6Ib7KIIT7FfNbeU6rkhKxHlNtjIWf"
+                  "https://sepolia.infura.io/v3/2d964329cb8746139ba47fe1ccf3b9e5"
                 ]
               }
             }
