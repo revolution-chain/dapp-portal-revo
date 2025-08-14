@@ -39,7 +39,7 @@ export default (getSigner: () => Promise<Signer | undefined>, getProvider: () =>
 
       status.value = "processing";
       const signer = await getSigner();
-      if (!signer) throw new Error("ZKsync Signer is not available");
+      if (!signer) throw new Error("Revolution Signer is not available");
 
       accountAddress = await signer.getAddress();
 

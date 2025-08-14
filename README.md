@@ -1,14 +1,14 @@
-![ZKsync Portal](public/preview.png)
+![Revolution Portal](public/preview.png)
 
-# ZKsync Portal 🚀
+# Revolution Portal 🚀
 
-**ZKsync Portal** is a state-of-the-art dapp, merging the power of bridge, tokens manager and transaction history into one user-friendly interface. Designed with a stress on effortless user experience, it simplifies token management, making it your premier interface for interacting with both ZKsync versions - every interaction smooth and efficient.
+**Revolution Portal** is a state-of-the-art dapp, merging the power of bridge, tokens manager and transaction history into one user-friendly interface. Designed with a stress on effortless user experience, it simplifies token management, making it your premier interface for interacting with both Revolution versions - every interaction smooth and efficient.
 
 ## ✨ Features
 
-- 🖥️ Intuitive interface for managing, sending, and bridging ZKsync Era.
+- 🖥️ Intuitive interface for managing, sending, and bridging Revolution.
 - 📇 Ability to add contacts for quick and easy access.
-- 🔧 Effortless setup and connection to local ZKsync nodes or ZK Stack Hyperchains.
+- 🔧 Effortless setup and connection to local Revolution nodes or ZK Stack Hyperchains.
 
 ## 🎉 Try it out!
 
@@ -18,7 +18,7 @@
 
 ## 🌍 Connecting to local node
 
-Harness the Portal's power to connect to your [local ZKsync Era node](https://docs.zksync.io/zksync-node/quickstart).
+Harness the Portal's power to connect to your [local Revolution node](https://docs.zksync.io/zksync-node/quickstart).
 
 **Prerequisites:** Node.js version 16+, npm version 7+
 
