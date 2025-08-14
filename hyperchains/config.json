@@ -1,12 +1,12 @@
 [
   {
     "network": {
-      "id": 73861,
+      "id": 73863,
       "name": "Revolution",
       "key": "revolution",
-      "rpcUrl": "https://dev.revolutionchain.io",
-      "blockExplorerUrl": "https://dev.revoscan.io",
-      "blockExplorerApi": "https://api.dev.revoscan.io",
+      "rpcUrl": "https://libertas.revolutionchain.io",
+      "blockExplorerUrl": "https://libertas.revoscan.io",
+      "blockExplorerApi": "https://api.libertas.revoscan.io",
       "l1Network": {
         "id": 11155111,
         "name": "Sepolia",
@@ -33,7 +33,7 @@
         "address": "0x000000000000000000000000000000000000800A",
         "symbol": "REVO",
         "decimals": 18,
-        "l1Address": "0x2c81f8b274d6096bbd99a6e133e2dec3731af114",
+        "l1Address": "0x8b84F028F6374A73B999Bf6199F9241A0B3F927C",
         "name": "REVO"
       }
     ]
