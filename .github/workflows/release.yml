@@ -61,11 +61,11 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          # tags: |
-          #   matterlabs/dapp-portal:latest
-          #   matterlabs/dapp-portal:${{ needs.publish.outputs.releaseVersion }}
           tags: |
-            ndau/portal-revo:latest
+            matterlabs/dapp-portal:latest
+            matterlabs/dapp-portal:${{ needs.publish.outputs.releaseVersion }}
+          # tags: |
+          #   ndau/portal-revo:latest
           file: Dockerfile
           no-cache: true
 
