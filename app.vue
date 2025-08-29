@@ -3,7 +3,7 @@
     <slot />
   </NuxtLayout>
 </template>
-
+<script src="/set-custom-hyperchains-config.js"></script>
 <script lang="ts" setup>
 useZkSyncWithdrawalsStore().updateWithdrawalsIfPossible(); // init store to update withdrawals
 
