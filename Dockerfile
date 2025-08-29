@@ -16,6 +16,9 @@ RUN npm i -g http-server
 ARG PORT=3000
 ENV PORT=${PORT}
 
+COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+
 WORKDIR /usr/src/app/dist
 
-CMD http-server -p $PORT -c-1 --proxy="http://127.0.0.1:$PORT/index.html?"
+CMD ["docker-entrypoint.sh"]

@@ -3,7 +3,6 @@
     <slot />
   </NuxtLayout>
 </template>
-
 <script lang="ts" setup>
 useZkSyncWithdrawalsStore().updateWithdrawalsIfPossible(); // init store to update withdrawals
 
