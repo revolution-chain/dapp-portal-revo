@@ -142,6 +142,7 @@ const getHyperchains = (): ZkSyncNetwork[] => {
 
 const nodeType = portalRuntimeConfig.nodeType;
 const determineChainList = (): ZkSyncNetwork[] => {
+  console.log("nodeType.............................",nodeType);
   switch (nodeType) {
     case "memory":
       return [inMemoryNode];

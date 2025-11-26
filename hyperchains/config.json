@@ -19,11 +19,11 @@
         "rpcUrls": {
           "default": {
             "http": [
-              "https://rpc.ankr.com/eth_sepolia/6d33da1f07ad9ca9c969106c368700edf595e00492d74cb9ca319f56f5629fa6"
+              "http://rpc.ankr.com/eth_sepolia/<YORU_API_KEY>"
             ]
           },
           "public": {
-            "http": ["https://sepolia.infura.io/v3/2d964329cb8746139ba47fe1ccf3b9e5"]
+            "http": ["https://sepolia.infura.io/v3/<YOUR_API_KEY>"]
           }
         }
       }
