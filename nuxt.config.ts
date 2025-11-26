@@ -37,7 +37,8 @@ export default defineNuxtConfig({
       ],
       script: [
         {
-          src: "/config.js",
+          src: "/set-custom-hyperchains-config.js",
+          async: false, // important: load synchronously before app
         },
         process.env.RUDDER_KEY
           ? {
