@@ -20,5 +20,6 @@ module.exports = {
     "vue/multi-word-component-names": "off", // Allow multi-word component names
     "vue/require-default-prop": "off", // Allow props without default values
     "vue/no-multiple-template-root": "off", // Allow multiple root elements in templates
+    "@typescript-eslint/no-unused-vars": "off",
   },
 };
